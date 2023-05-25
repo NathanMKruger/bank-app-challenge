@@ -10,20 +10,22 @@
 <body>
     <header>Banking App</header>
 
-    <section class="balance-section">
-        <div id="balance-label">Balance</div>
-        <div id="balance-total">$ 0.00</div>
-        <button type="reset">Reset</button>
-    </section>
+    <section class="parent-container">
+        <section class="balance-section">
+            <div id="balance-label">Balance</div>
+            <div id="balance-total">$ 0.00</div>
+            <button id="reset" type="reset">Reset</button>
+        </section>
 
-    <section class="transaction-section">
-        <div id="transaction-header">Submit Transaction</div>
-        <form>
-            <label for="amount">Amount:</label><br>
-            <label for="amount">$ </label>
-            <input type="text" id="amount" name="amount"><br>
-            
-        </form>
-    </section>
+        <section class="transaction-section">
+            <div id="transaction-header">Submit Transaction</div>
+            <form>
+                <label for="amount">Amount:</label><br>
+                <label for="amount">$ </label>
+                <input type="text" id="amount" name="amount"><br>
+
+            </form>
+        </section>
+</section>
 </body>
 </html>
