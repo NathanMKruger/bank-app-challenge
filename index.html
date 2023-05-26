@@ -8,7 +8,7 @@
     <title>Bank App Challenge</title>
 </head>
 <body>
-    <header>Banking App</header>
+    <!-- <header>Banking App</header>
 
     <section class="parent-container">
         <section class="balance-section">
@@ -26,6 +26,49 @@
 
             </form>
         </section>
-</section>
+</section> -->
+
+    <div class="main-container">
+        <header>Banking App</header>
+
+        <div class="main-content">
+            <div class="balance">
+                <h1 id="balance">Balance</h1>
+                <p id="amount">$ 0.00</p>
+                <button id="reset">Reset</button>
+            </div>
+
+            <div class="transaction">
+                <div id="trans-label">Submit Transaction</div>
+                <div class="inner-transaction">
+                    <label for="amount-input" id="amount-label">Amount:</label>
+                    <div class="amount-input">
+                        <p>$</p>
+                        <input type="number" step=".01" id="amount-input">
+                    </div>
+
+                    <label for="trans-type" id="type-label">Type</label>
+                    <select name="trans-type" id="trans-type">
+                        <option value="deposit">Deposit</option>
+                        <option value="withdraw">Withdraw</option>
+                    </select>
+                    <div class="submit-container">
+                        <button id="submit-btn">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="transaction-log">
+            <table class="transaction-table">
+                <thead class="table-header">
+                    <th>Transaction ID</th>
+                    <th>Type</th>
+                    <th>Amount</th>
+                    <th>Starting Balance</th>
+                    <th>New Balance</th>
+                </thead>
+            </table>
+        </div>
+    </div>
 </body>
 </html>
